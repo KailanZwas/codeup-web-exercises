@@ -74,13 +74,16 @@ console.log(isTwo(4));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-let num1 = .2;
-let num2 = 2;
-function calculateTip(num1, num2){
-    return calculateTip(num1 * num2);
-    }
+function calculateTip(total, percentage){
+    return total * percentage;
 
-console.log(calculateTip(num1, num2));
+}
+var total = prompt("enter bill total");
+var percentage = prompt("enter tip");
+alert(calculateTip(total, percentage));
+console.log(total);
+
+//console.log(calculateTip(100, 0.25));
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
