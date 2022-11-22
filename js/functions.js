@@ -107,9 +107,16 @@ console.log(isTwo(random));
  * then display the dollar amount they should tip
  */
 
-var total = prompt("enter bill total");
-var percentage = prompt("enter tip");
-alert(calculateTip(total, percentage));
+// var total = prompt("enter bill total");
+// var percentage = prompt("enter tip");
+// alert(calculateTip(total, percentage));
+
+let billTotal = prompt("What is the total of the bill?")
+let tipPercentage = prompt("What percentage would you like to tip? (Don't be cheap)")
+let tipUserAnswer = calculateTip(billTotal, tipPercentage);
+alert("The calculated tip is: " + tipUserAnswer.toFixed(2));
+
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
