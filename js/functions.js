@@ -8,11 +8,13 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello(name){
-    return "Hello " + name;
-}
+// function sayHello(name){
+//     return "Hello " + name;
+// }
 
-//console.log(sayHello("bob"));
+// arrow function
+//const sayHello = (name) => {...}
+
 
 
 
@@ -25,6 +27,11 @@ function sayHello(name){
  */
 let helloMessage = sayHello("Kailan");
 console.log(helloMessage);
+
+// back ticks ` temprate literal
+// let message =`Hello, ${name}!`
+// ${(1 + 1)}!`
+
 
 /**
  * TODO:
@@ -132,10 +139,22 @@ alert("The calculated tip is: " + tipUserAnswer.toFixed(2));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-function applyDiscount(num1, num2){
-   let originalPrice = num1;
-   let discountPercent = num2;
-    return originalPrice -(discountPercent * originalPrice);
-}
+// function applyDiscount(num1, num2){
+//    let originalPrice = num1;
+//    let discountPercent = num2;
+//     return originalPrice -(discountPercent * originalPrice);
+// }
 
-console.log(applyDiscount(50, .05));
+// console.log(applyDiscount(50, .05));
+var originalPrice = 100;
+var discountPercent = 20; // 20%
+let appliedDiscount = applyDiscount(originalPrice, discountPercent)
+console.log("we are about to apply a " + discountPercent + "% discount to an original price of " + originalPrice);
+console.log(appliedDiscount)
+function applyDiscount(price, discount) {
+    let discountFormatted = discount / 100;
+    let result = ( 1 -discount) * price;
+
+    return result.toFixed(2);
+
+}
