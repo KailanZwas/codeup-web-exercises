@@ -74,25 +74,26 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(total, percentage){
-    return total * percentage;
-
-}
-
-console.log(total);
-
-// let tipAnswer = calculateTip(100, 20)
-// console.log(tipAnswer)
-// function calculateTip(total, tip){
-//     console.log("Running calculateTip()");
-//     console.log("The total is " + total);
-//     console.log("The tip entered is " + tip);
-//     let tipFormatted = "0." + tip;
-//     console.log("The concatenated tip " + tipFormatted);
-//     tipFormatted = parseFloat(tipFormatted);
+// function calculateTip(total, percentage){
+//     return total * percentage;
 //
-//     let answer = total * tip;
 // }
+//
+// console.log(total);
+
+ let tipAnswer = calculateTip(100, 20)
+ console.log(tipAnswer)
+ function calculateTip(total, tip){
+   console.log("Running calculateTip()");
+    console.log("The total is " + total);
+    console.log("The tip entered is " + tip);
+    let tipFormatted = "0." + tip;
+     console.log("The concatenated tip " + tipFormatted);
+    tipFormatted = parseFloat(tipFormatted);
+
+    let answer = total * tipFormatted;
+        return answer;
+ }
 
 
 
