@@ -8,11 +8,11 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-// function sayHello(name){
-//     return "Hello " + name;
-// }
+function sayHello(name){
+    return "Hello " + name;
+}
 
-// arrow function
+// arrow function have to be declared before you can call it
 //const sayHello = (name) => {...}
 
 
@@ -28,7 +28,7 @@
 let helloMessage = sayHello("Kailan");
 console.log(helloMessage);
 
-// back ticks ` temprate literal
+// back ticks ` template literal
 // let message =`Hello, ${name}!`
 // ${(1 + 1)}!`
 
@@ -92,9 +92,9 @@ console.log(isTwo(random));
  console.log(tipAnswer)
  function calculateTip(total, tip){
    console.log("Running calculateTip()");
-    console.log("The total is " + total);
+    console.log(`The total is $${total}`);
     console.log("The tip entered is " + tip);
-    let tipFormatted = "0." + tip;
+    let tipFormatted = `0.${tip}`;
      console.log("The concatenated tip " + tipFormatted);
     tipFormatted = parseFloat(tipFormatted);
 
@@ -153,7 +153,7 @@ console.log("we are about to apply a " + discountPercent + "% discount to an ori
 console.log(appliedDiscount)
 function applyDiscount(price, discount) {
     let discountFormatted = discount / 100;
-    let result = ( 1 -discount) * price;
+    let result = ( 1 - discountFormatted) * price;
 
     return result.toFixed(2);
 
