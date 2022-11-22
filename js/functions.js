@@ -62,7 +62,7 @@ function isTwo(num){
     return (num == 2);
 }
 
-console.log(isTwo(4));
+console.log(isTwo(random));
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -80,6 +80,23 @@ function calculateTip(total, percentage){
 }
 
 console.log(total);
+
+// let tipAnswer = calculateTip(100, 20)
+// console.log(tipAnswer)
+// function calculateTip(total, tip){
+//     console.log("Running calculateTip()");
+//     console.log("The total is " + total);
+//     console.log("The tip entered is " + tip);
+//     let tipFormatted = "0." + tip;
+//     console.log("The concatenated tip " + tipFormatted);
+//     tipFormatted = parseFloat(tipFormatted);
+//
+//     let answer = total * tip;
+// }
+
+
+
+
 
 //console.log(calculateTip(100, 0.25));
 /**
