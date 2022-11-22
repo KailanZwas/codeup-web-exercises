@@ -24,7 +24,7 @@
 //     return num1 + 2;
 // }
 
-// let pizzaPreference = prompt("WHat is your favorite kind of pizza?");
+ let pizzaPreference = prompt("WHat is your favorite kind of pizza?");
 // //if ( pizzaPreference.toLocaleLowerCase() == "cheese") {
 // if (pizzaPreference == 'cheese' || pizzaPreference == 'pepperoni') {
 //     console.log("Thanks Kevin from Home Alone!")
@@ -35,7 +35,27 @@
 //     console.log("Oh, okay... that's cool... my aunt's vegan too...");
 // }
 
-let success = true;
+
+
+switch(pizzaPreference){
+    case "cheese":
+        console.log("Thanks Kevin from Home Alone!");
+        break;
+    case "pineapples and hot sauce":
+        console.log("What a coincidence, I like  pineapples and hot sauce too!");
+        break;
+    default:
+        console.log("Oh, okay... that's cool... my aunt's vegan too...");
+
+
+}
+
+
+
+
+
+
+// let success = true;
 // let message;
 // if(success) {
 //     message = "The operatioin was succesful";
@@ -43,5 +63,5 @@ let success = true;
 // else {
 //     message = "The operation was not succesful";
 // }
-let message = success ? "The operation was succesful" : "The operaiton was not succesful"
-console.log(message);
+// let message = success ? "The operation was succesful" : "The operaiton was not succesful"
+// console.log(message);
