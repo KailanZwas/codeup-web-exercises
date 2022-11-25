@@ -71,6 +71,12 @@ function papaJohns(pizza){
     let pizzaMeduim = twelveSlices;
     let pizzaSmall = eightSlices;
 
+    // Drinks
+    let softDrink = coke;
+    let softDrink = sprite;
+    let sofDrink = rootBeer;
+    let softDrink = fanta;
+
 
 
 }
