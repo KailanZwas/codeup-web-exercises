@@ -56,5 +56,10 @@ function fight(person1, person2){
 
 
 function papaJohns(pizza){
+    let toppingV1 = pinnapple;
+    let toppingV2 = greenPepper;
+    let toppingV3 = redPepper;
+
+
 
 }
