@@ -66,6 +66,10 @@ function papaJohns(pizza){
     let toppingM2 = ham;
     let toppingM3 = bacon;
 
+    // Pizza sizes
+    let pizzaLarge = sixteenSlices;
+    let pizzaMeduim = twelveSlices;
+    let pizzaSmall = eightSlices;
 
 
 
