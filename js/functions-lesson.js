@@ -34,15 +34,15 @@ function fight(person1, person2){
     //Get the pieces of the puzzle!!!!
     //Put the pieces of the puzzle into variables
 
-    let number = num;
-    let answer = (number % 2 == 0);
+    // let number = num;
+    // let answer = (number % 2 == 0);
 
 //function isEven(num){
     //return (num % 2 == 0)
 
     //Finially return the answer
-    return answer;
-}
+//     return answer;
+// }
 
 
 
@@ -58,6 +58,7 @@ function fight(person1, person2){
 function papaJohns(pizza){
     //Veggies
     let toppingV1 = pinnapple;
+    console.log(toppingV1);
     let toppingV2 = greenPepper;
     let toppingV3 = redPepper;
 
