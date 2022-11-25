@@ -77,6 +77,12 @@ function papaJohns(pizza){
     let sofDrink3 = rootBeer;
     let softDrink4 = fanta;
 
+    // Sides
+    let sideExtra1 = wings;
+    let sideExtra2 = bonelessWings;
+    let sideExtra3 = breadSticks;
+    let sideExtra4 = cookies;
+
 
 
 }
