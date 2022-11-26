@@ -84,6 +84,8 @@ function papaJohns(pizza){
     let sideExtra3 = breadSticks;
     let sideExtra4 = cookies;
 
+    //prices
+
 
 
 }
