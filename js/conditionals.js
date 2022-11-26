@@ -24,10 +24,7 @@
 let userPrompt = prompt("what is your favorite color");
 let message = analyzeColor(userPrompt);
 console.log(message);
-// let message = analyzeColor("yellow");
-//     console.log(message);
-// let message2 = analyzeColor("blue");
-//     console.log(message2);
+
 function analyzeColor(color) {
     if (color === "yellow")  {
         return("Yellow is the color of the sun.");
@@ -37,15 +34,6 @@ function analyzeColor(color) {
         return ("we dont know what that color is.");
     }
 }
-//     if (analyzeColor ("yellow"));
-//     console.log("Yellow is the color of the sun!")
-// } else if (analyzeColor("blue")) {
-//     console.log(analyzeColor("blue is the color of the sky.");
-// } else if (analyzeColor("red")) {
-//     console.log("Cardinal is red");
-// } else if (analyzeColor("green")) {
-//     console.log("the grass is green");
-// }
 
 console.log();
 
