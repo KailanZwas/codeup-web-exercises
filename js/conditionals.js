@@ -26,14 +26,19 @@ let message = analyzeColor(userPrompt);
 console.log(message);
 
 function analyzeColor(color) {
-    if (color === "yellow")  {
-        return("Yellow is the color of the sun.");
+    if (color === "yellow") {
+        return ("Yellow is the color of the sun.");
     } else if (color === "blue") {
-        return("Blue is the color of the sky");
+        return ("Blue is the color of the sky");
+    } else if (color === "green") {
+        return ("Green is the color of the grass.");
+    } else if (color === "violet") {
+        return ("violet is the color of Lilac's");
     } else {
         return ("we dont know what that color is.");
     }
 }
+
 
 console.log();
 
