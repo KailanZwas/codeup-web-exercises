@@ -24,25 +24,25 @@
 //let userPrompt = prompt("what is your favorite color");
 //let message = analyzeColor(userPrompt);
 //console.log(message);
-
-function analyzeColor(color) {
-    if (color === "yellow") {
-        return ("Yellow is the color of the sun.");
-    } else if (color === "blue") {
-        return ("Blue is the color of the sky");
-    } else if (color === "green") {
-        return ("Green is the color of the grass.");
-    } else if (color === "violet") {
-        return ("violet is the color of Lilac's");
-    } else if (color === "orange") {
-        return ("Garfield is an Orange cat!");
-    }  else if (color === "red"){
-        return("Red is the color of a fireTruck");
-    }
-    else {
-        return ("we dont know what that color is.");
-    }
-}
+//
+// function analyzeColor(color) {
+//     if (color === "yellow") {
+//         return ("Yellow is the color of the sun.");
+//     } else if (color === "blue") {
+//         return ("Blue is the color of the sky");
+//     } else if (color === "green") {
+//         return ("Green is the color of the grass.");
+//     } else if (color === "violet") {
+//         return ("violet is the color of Lilac's");
+//     } else if (color === "orange") {
+//         return ("Garfield is an Orange cat!");
+//     }  else if (color === "red"){
+//         return("Red is the color of a fireTruck");
+//     }
+//     else {
+//         return ("we dont know what that color is.");
+//     }
+// }
 //
 //
 // console.log();
@@ -54,8 +54,8 @@ function analyzeColor(color) {
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
@@ -100,8 +100,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-var analyzeColor = prompt ("what is your favorite color?");
-alert(analyzeColor);
+// var analyzeColor = prompt ("what is your favorite color?");
+// alert(analyzeColor);
 /* ########################################################################## */
 
 /**
@@ -132,7 +132,6 @@ function calculateTotal(totalAmount, luckyNumber) {
     let discountPrice = luckyNumber / 100;
     let result = ( 1 - discountPrice) * totalAmount;
 
-    console.log(result);
 }
 /**
  * TODO:
@@ -143,35 +142,28 @@ function calculateTotal(totalAmount, luckyNumber) {
  * price before the discount was, and what their price after the discount is.
  */
  // Generate a random number between 0 and 6
-  var luckyNumber = Math.floor(Math.random() * 6);
+   var luckyNumber = Math.floor(Math.random() * 6);
+   var userBill = prompt("Enter Total Bill");
 
-switch (luckyNumber) {
-    case luckyNumber === 0:
-        alert ("Your lucky number is , you get a 0% Discount" );
-        break;
-    case luckyNumber === 1:
-    alert ("Your lucky number is 1, you get a 10% Discount" );
-          break;
-    case luckyNumber === 2:
-        alert ("Your lucky number is , you get a 25% Discount" );
-        break;
-    case luckyNumber === 3:
-        alert ("Your lucky number is , you get a 35% Discount" );
-        break;
-    case luckyNumber === 4:
-        alert ("Your lucky number is , you get a 50% Discount" );
-        break;
-    case luckyNumber === 5:
-        alert ("Your lucky number is , you get a 100% Discount,  Everything is free!!" );
-        break;
-        console.log(luckyNumber);
-  }
+   discountPrice(luckyNumber, userBill);
 
-  var userBill = prompt("Enter Total Bill");
+function discountPrice(luckyNumber) {
+    if (luckyNumber === 0) {
+        alert("Your lucky number is 0, you get a 0% Discount");
+    } else if (luckyNumber === 1) {
+        alert("Your lucky number is 1, you get a 10% Discount, your new price is $" + (.9 * userBill).toFixed(2));
+    } else if (luckyNumber === 2) {
+        alert("Your lucky number is 2, you get a 25% Discount, your new price is $" + (.75 * userBill).toFixed(2));
+    } else if (luckyNumber === 3) {
+        alert("Your lucky number is 3, you get a 35% Discount, your new price is $" + (.65 * userBill).toFixed(2));
+    } else if (luckyNumber === 4) {
+        alert("Your lucky number is 4, you get a 50% Discount, your new price is $" + (.5 * userBill).toFixed(2));
+    } else if (luckyNumber === 5) {
+        alert("Your lucky number is , you get a 100% Discount,  Everything is free!!");
 
-  //alert("Your Lucky number is " + luckyNumber + " price before discount was " + totalAmount + "." + " Your final price after discount is " + result  );
-alert(luckyNumber);
+    }
 
+}
 
 
 /**
