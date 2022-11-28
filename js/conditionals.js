@@ -126,13 +126,13 @@
 
 
 
-let discountedPrice = calculateTotal(100, 35);
-function calculateTotal(totalAmount, luckyNumber) {
-
-    let discountPrice = luckyNumber / 100;
-    let result = ( 1 - discountPrice) * totalAmount;
-
-}
+// let discountedPrice = calculateTotal(100, 35);
+// function calculateTotal(totalAmount, luckyNumber) {
+//
+//     let discountPrice = luckyNumber / 100;
+//     let result = ( 1 - discountPrice) * totalAmount;
+//
+// }
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -142,28 +142,28 @@ function calculateTotal(totalAmount, luckyNumber) {
  * price before the discount was, and what their price after the discount is.
  */
  // Generate a random number between 0 and 6
-   var luckyNumber = Math.floor(Math.random() * 6);
-   var userBill = prompt("Enter Total Bill");
-
-   discountPrice(luckyNumber, userBill);
-
-function discountPrice(luckyNumber) {
-    if (luckyNumber === 0) {
-        alert("Your lucky number is 0, you get a 0% Discount");
-    } else if (luckyNumber === 1) {
-        alert("Your lucky number is 1, you get a 10% Discount, your new price is $" + (.9 * userBill).toFixed(2));
-    } else if (luckyNumber === 2) {
-        alert("Your lucky number is 2, you get a 25% Discount, your new price is $" + (.75 * userBill).toFixed(2));
-    } else if (luckyNumber === 3) {
-        alert("Your lucky number is 3, you get a 35% Discount, your new price is $" + (.65 * userBill).toFixed(2));
-    } else if (luckyNumber === 4) {
-        alert("Your lucky number is 4, you get a 50% Discount, your new price is $" + (.5 * userBill).toFixed(2));
-    } else if (luckyNumber === 5) {
-        alert("Your lucky number is , you get a 100% Discount,  Everything is free!!");
-
-    }
-
-}
+//    var luckyNumber = Math.floor(Math.random() * 6);
+//    var userBill = prompt("Enter Total Bill");
+//
+//    discountPrice(luckyNumber, userBill);
+//
+// function discountPrice(luckyNumber) {
+//     if (luckyNumber === 0) {
+//         alert("Your lucky number is 0, you get a 0% Discount");
+//     } else if (luckyNumber === 1) {
+//         alert("Your lucky number is 1, you get a 10% Discount, your new price is $" + (.9 * userBill).toFixed(2));
+//     } else if (luckyNumber === 2) {
+//         alert("Your lucky number is 2, you get a 25% Discount, your new price is $" + (.75 * userBill).toFixed(2));
+//     } else if (luckyNumber === 3) {
+//         alert("Your lucky number is 3, you get a 35% Discount, your new price is $" + (.65 * userBill).toFixed(2));
+//     } else if (luckyNumber === 4) {
+//         alert("Your lucky number is 4, you get a 50% Discount, your new price is $" + (.5 * userBill).toFixed(2));
+//     } else if (luckyNumber === 5) {
+//         alert("Your lucky number is , you get a 100% Discount,  Everything is free!!");
+//
+//     }
+//
+// }
 
 
 /**
@@ -185,8 +185,30 @@ function discountPrice(luckyNumber) {
  * HINT: The way we prompt for a value could be improved
  */
 
-var user = confirm('Would you like to enter a number');
-console.log(confirmed);
+var userInput = confirm('Would you like to enter a number');
+console.log(userInput);
+// if ok log, else stop
+if (userInput === true){
 
-alert("")
+    //prompt user to enter a number
+    prompt("Enter a number");
+    //save prompt to use in variable
+    let numberInput = prompt;
+    // take var plus 100 alert answer
+    if ()
+    //create if/else with var as the input
+}
+function
+var number = prompt("What is your number?");
+
+var evenOdd = number;
+function evenOdd(number) {
+    if (number % 2 === 0){
+    alert("number is even");
+} else {
+    alert("number is odd");
+    }
+}
+
+
 
