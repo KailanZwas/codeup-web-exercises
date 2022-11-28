@@ -146,24 +146,25 @@ function calculateTotal(totalAmount, luckyNumber) {
   var luckyNumber = Math.floor(Math.random() * 6);
 
 switch (luckyNumber) {
-    case "0":
+    case luckyNumber === 0:
         alert ("Your lucky number is , you get a 0% Discount" );
         break;
-    case "1":
-          alert ("Your lucky number is 1, you get a 10% Discount" );
+    case luckyNumber === 1:
+    alert ("Your lucky number is 1, you get a 10% Discount" );
           break;
-    case "2":
+    case luckyNumber === 2:
         alert ("Your lucky number is , you get a 25% Discount" );
         break;
-    case "3":
+    case luckyNumber === 3:
         alert ("Your lucky number is , you get a 35% Discount" );
         break;
-    case "4":
+    case luckyNumber === 4:
         alert ("Your lucky number is , you get a 50% Discount" );
         break;
-    case "5":
+    case luckyNumber === 5:
         alert ("Your lucky number is , you get a 100% Discount,  Everything is free!!" );
         break;
+        console.log(luckyNumber);
   }
 
   var userBill = prompt("Enter Total Bill");
