@@ -186,29 +186,54 @@
  */
 
 var userInput = confirm('Would you like to enter a number');
-console.log(userInput);
+
 // if ok log, else stop
-if (userInput === true){
+if (userInput === true) {
 
     //prompt user to enter a number
-    prompt("Enter a number");
-    //save prompt to use in variable
-    let numberInput = prompt;
-    // take var plus 100 alert answer
-    if ()
-    //create if/else with var as the input
-}
-function
-var number = prompt("What is your number?");
+    // prompt("Enter a number");
+    // console.log(prompt);
 
-var evenOdd = number;
-function evenOdd(number) {
-    if (number % 2 === 0){
-    alert("number is even");
-} else {
-    alert("number is odd");
+    //save prompt to use in variable
+    let numberInput = prompt("Enter a number");
+    // take var use modalus to find if even or odd
+    if (numberInput % 2 === 0) {
+        alert("number is even");
+        //} else (numberInput % 2 === 1){
+    } if (numberInput % 2 === 1) {
+        alert("number is odd");
     }
+
+    // take var plus 100 alert answer
+    //alert(numberInput + 100);   wrong!!!!!
+    //create var of numberInput plus 100
+
+    let numberPlus = (parseFloat(numberInput) + 100);
+    // console.log(numberPlus);
+    alert(numberPlus);
+
+    //
+    //create if/else with var as the input
+    if (numberInput > 0) {
+        // positive alert
+        alert(" is positive")
+        // neg alert
+    } else {
+        alert("is negative");
 }
+}
+
+// function
+// var number = prompt("What is your number?");
+//
+// var evenOdd = number;
+// function evenOdd(number) {
+//     if (number % 2 === 0){
+//     alert("number is even");
+// } else {
+//     alert("number is odd");
+//     }
+// }
 
 
 
