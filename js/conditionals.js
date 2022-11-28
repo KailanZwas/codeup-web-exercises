@@ -123,6 +123,9 @@ alert(analyzeColor);
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+
+
+
 let discountedPrice = calculateTotal(100, 35);
 function calculateTotal(totalAmount, luckyNumber) {
 
@@ -139,8 +142,34 @@ function calculateTotal(totalAmount, luckyNumber) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-  Generate a random number between 0 and 6
+ // Generate a random number between 0 and 6
   var luckyNumber = Math.floor(Math.random() * 6);
+
+switch (luckyNumber) {
+    case "0":
+        alert ("Your lucky number is , you get a 0% Discount" );
+        break;
+    case "1":
+          alert ("Your lucky number is 1, you get a 10% Discount" );
+          break;
+    case "2":
+        alert ("Your lucky number is , you get a 25% Discount" );
+        break;
+    case "3":
+        alert ("Your lucky number is , you get a 35% Discount" );
+        break;
+    case "4":
+        alert ("Your lucky number is , you get a 50% Discount" );
+        break;
+    case "5":
+        alert ("Your lucky number is , you get a 100% Discount,  Everything is free!!" );
+        break;
+  }
+
+  var userBill = prompt("Enter Total Bill");
+
+  //alert("Your Lucky number is " + luckyNumber + " price before discount was " + totalAmount + "." + " Your final price after discount is " + result  );
+alert(luckyNumber);
 
 
 
