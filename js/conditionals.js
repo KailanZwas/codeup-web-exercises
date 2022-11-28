@@ -43,9 +43,9 @@ function analyzeColor(color) {
         return ("we dont know what that color is.");
     }
 }
-
-
-console.log();
+//
+//
+// console.log();
 
 
 
@@ -69,37 +69,39 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-var analyzeColor = prompt ("what is your favorite color?");
-switch (analyzeColor) {
-    case "yellow":
-        alert("Yellow is the color of the sun.");
-        break;
-        console.log(analyzeColor);
-    case "blue":
-        alert("Blue is the color of the sky");
-        break;
-    case "green":
-        alert("Green is the color of the grass.");
-        break;
-    case "violet":
-        alert ("violet is the color of Lilac's");
-        break;
-    case"orange":
-        alert ("Garfield is an Orange cat!");
-        break;
-    case "red":
-        alert ("Red is the color of a fireTruck");
-    default:
-        alert(analyzeColor + " we dont know what that color is.");
-        break;
-}
+
+// switch (analyzeColor) {
+//     case "yellow":
+//         alert("Yellow is the color of the sun.");
+//         break;
+//         console.log(analyzeColor);
+//     case "blue":
+//         alert("Blue is the color of the sky");
+//         break;
+//     case "green":
+//         alert("Green is the color of the grass.");
+//         break;
+//     case "violet":
+//         alert ("violet is the color of Lilac's");
+//         break;
+//     case"orange":
+//         alert ("Garfield is an Orange cat!");
+//         break;
+//     case "red":
+//         alert ("Red is the color of a fireTruck");
+//         break;
+//     default:
+//         alert(analyzeColor + " we dont know what that color is.");
+//         break;
+// }
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+var analyzeColor = prompt ("what is your favorite color?");
+alert(analyzeColor);
 /* ########################################################################## */
 
 /**
@@ -121,7 +123,11 @@ switch (analyzeColor) {
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-
+let discountedPrice = calculateTotal(4, 50);
+function calculateTotal(totalAmount, luckyNumber) {
+   let discountedPrice = '0.${luckyNumber}';
+    return ()
+}
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -130,8 +136,10 @@ switch (analyzeColor) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+ // Generate a random number between 0 and 6
+ // var luckyNumber = Math.floor(Math.random() * 6);
+
+
 
 /**
  * TODO:
