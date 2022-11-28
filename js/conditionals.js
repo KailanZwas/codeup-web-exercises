@@ -123,10 +123,13 @@ alert(analyzeColor);
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-let discountedPrice = calculateTotal(4, 50);
+let discountedPrice = calculateTotal(100, 35);
 function calculateTotal(totalAmount, luckyNumber) {
-   let discountedPrice = '0.${luckyNumber}';
-    return ()
+
+    let discountPrice = luckyNumber / 100;
+    let result = ( 1 - discountPrice) * totalAmount;
+
+    console.log(result);
 }
 /**
  * TODO:
