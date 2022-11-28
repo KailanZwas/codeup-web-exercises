@@ -184,3 +184,9 @@ function discountPrice(luckyNumber) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+var user = confirm('Would you like to enter a number');
+console.log(confirmed);
+
+alert("")
+
