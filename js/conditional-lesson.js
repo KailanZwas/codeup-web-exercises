@@ -94,3 +94,111 @@ else {
 // }
 // let message = success ? "The operation was succesful" : "The operaiton was not succesful"
 // console.log(message);
+
+
+
+
+
+
+
+// Create a function, removeFirstCharacter, that takes in a string and returns the string with
+//     the first character removed. If no input is given, return false. If one character is given,
+// return an empty string. Assume only empty input or a valid string input.
+// removeFirstCharacter(‘bob’) // ‘ob’
+// removeFirstCharacter(‘jason’) // ‘ason’
+// removeFirstCharacter(‘to’) // ‘o’
+// removeFirstCharacter(‘1’) // ‘’
+
+
+// create function with one parameter
+
+    // if input not a string return false
+
+
+    // check if input is a string
+
+        // check how many characters
+            // if empty return the input
+             // otherwise, return the input without the first character
+    //split
+
+
+// function removeFirstCharacter(input){
+//     // if input not a string return false
+//     if (typeof input !== 'string') {
+//         return false;
+//     }
+//
+//     // check if input is a string
+//
+//     // check how many characters
+//     // if empty return the input
+//     if (input.length === 0){
+//         return input;
+//     } else {
+//        return input.slice(1)
+//     }
+//         // otherwise, return the input without the first character
+// }
+//
+// console.log(removeFirstCharacter("kailan"),'ailan'); // 'ailan'
+
+function removeFirstCharacter(input){
+    if (typeof input !== 'string') {
+         return false;
+     // const output = (input.length === 0) ? input : input.slice(1);
+     // return output = ()
+         return (input.length === 0) ? input : input.slice(1);
+    }
+}
+
+console.log(removeFirstCharacter("batman"), 'atman');
+
+
+
+
+
+
+
+// tuesday
+
+
+// JS Basic
+
+//  How ca a number turn to a string
+// let num = 7;
+// console.log(String.num);  //('' + num);       (num.toString());
+
+
+    // How ca a string be a converted to a number
+
+//         let str ='7';
+// console.log(parseFloat(str));
+// console.log(parseInt(str));
+// console.log(Number(str));
+
+    // How do you determin if a value is a number or numeric string?***********
+
+//     function isNumeric(input) {
+//         return !isNaN(parseFloat(input));
+//     }
+//
+// console.log(isNumeric(7), true);
+// console.log(isNumeric('7'), true);
+// console.log(isNumeric('bob'), false);
+// console.log(isNumeric(true), false);
+
+
+
+//  =========== Functions
+
+// what is the difference between a function parameter and argument?
+
+//param - in the definition to represent what to do with inputs
+// arguments - input values when you call the function
+
+function sayGreeting(greeting){
+    return greeting;
+}
+
+sayGreeting('HOWDY!')   // howdy is the argument
