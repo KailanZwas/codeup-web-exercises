@@ -94,3 +94,51 @@ else {
 // }
 // let message = success ? "The operation was succesful" : "The operaiton was not succesful"
 // console.log(message);
+
+
+
+
+
+
+
+// Create a function, removeFirstCharacter, that takes in a string and returns the string with
+//     the first character removed. If no input is given, return false. If one character is given,
+// return an empty string. Assume only empty input or a valid string input.
+// removeFirstCharacter(‘bob’) // ‘ob’
+// removeFirstCharacter(‘jason’) // ‘ason’
+// removeFirstCharacter(‘to’) // ‘o’
+// removeFirstCharacter(‘1’) // ‘’
+
+
+// create function with one parameter
+
+    // if input not a string return false
+
+
+    // check if input is a string
+
+        // check how many characters
+            // if empty return the input
+             // otherwise, return the input without the first character
+    //split
+
+
+function removeFirstCharacter(input){
+    // if input not a string return false
+    if (typeof input !== 'string') {
+        return false;
+    }
+
+    // check if input is a string
+
+    // check how many characters
+    // if empty return the input
+    if (input.length === 0){
+        return input;
+    } else {
+       return input.slice(1)
+    }
+        // otherwise, return the input without the first character
+}
+
+console.log(removeFirstCharacter("kailan"),'ailan'); // 'ailan'
