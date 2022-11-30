@@ -94,3 +94,49 @@ else {
 // }
 // let message = success ? "The operation was succesful" : "The operaiton was not succesful"
 // console.log(message);
+
+
+
+// tuesday
+
+
+// JS Basic
+
+//  How ca a number turn to a string
+// let num = 7;
+// console.log(String.num);  //('' + num);       (num.toString());
+
+
+// How ca a string be a converted to a number
+
+//         let str ='7';
+// console.log(parseFloat(str));
+// console.log(parseInt(str));
+// console.log(Number(str));
+
+// How do you determin if a value is a number or numeric string?***********
+
+//     function isNumeric(input) {
+//         return !isNaN(parseFloat(input));
+//     }
+//
+// console.log(isNumeric(7), true);
+// console.log(isNumeric('7'), true);
+// console.log(isNumeric('bob'), false);
+// console.log(isNumeric(true), false);
+
+
+
+//  =========== Functions
+
+// what is the difference between a function parameter and argument?
+
+//param - in the definition to represent what to do with inputs
+// arguments - input values when you call the function
+
+// function sayGreeting(greeting){
+//     return greeting;
+// }
+//
+// sayGreeting('HOWDY!')   // howdy is the argument
+// // console.log(message);
