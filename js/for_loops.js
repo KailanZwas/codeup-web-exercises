@@ -1,3 +1,4 @@
+
 // 1. Create a function named showMultiplicationTable that accepts a number and console.logs the multiplication table for that number (just multiply by the numbers 1 through 10)
 //
 // For example, showMultiplicationTable(7) should output
@@ -32,6 +33,19 @@ function showMultiplicationTable(input) {
 // console.log(answer);
 // function randomGeneratorOddOrEven(min, max) {
 //return randomNum = Math.floor(Math.random() * (max - min + 1) + 1);
+
+function showMultiplicationTable(input) {
+   for (var i = 0; i <= 10; i++)
+        console.log(`${input} x ${i} = ${input * i}`);
+    }
+
+    //Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200
+// and output to the console whether each number is odd or even. For example:
+
+//
+
+// function randomGeneratorOddOrEven() {
+
     for (var i = 0; i <= 10; i++) {
         let randomNum = Math.floor(Math.random() * (200 - 20 + 1));
         if (randomNum % 2 === 0) {
