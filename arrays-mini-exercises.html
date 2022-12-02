@@ -9,6 +9,25 @@
 
   "use strict";
 
+ // // - PRE-LECTURE QUESTIONS
+
+                    //  What is an array? Element? Index?
+  //  In JS, an array is a special object data type that may contain
+ //  a collection of multiple data types at numeric indices.
+
+                    //      How would you access the first element in an array?
+  // array[0]
+ //      What happens when you access an element at an index that has not been assigned a value?
+  //    they may be declared a value
+ //      What are the differences between a for loop and forEach loop? Why use one over the other?
+ //
+
+
+
+
+
+
+
   // ============================= Arrays Definition
 
   /*
@@ -60,11 +79,11 @@
 
   // 3
 
-  console.log(students[students.length - 1]);
+  //console.log(students[students.length - 1]);
 
 
 
-  console.log(students[100]);
+ // console.log(students[100]);
 
 
 
@@ -79,10 +98,10 @@
   // let pies = [];
   // pies[0] = "apple";
   // pies[1] = "cherry";
-
-
-
-
+  // pies[2] = "peach";
+  //
+  //
+  //
   // console.log(pies);
 
   // declaring and initializing a high index number
@@ -117,6 +136,25 @@
       2. Practice console logging each classmate separately.
       3. Reassign the second element to be the string "Justin".
    */
+// let classMates =["Lonnie", "Horace", "Jeffery"];
+//
+//   console.log(classMates[0]);
+//   console.log(classMates[1]);
+//   console.log(classMates[2]);
+//   classMates[1] = 'Justin'
+//   console.log(classMates);
+
+
+  //write a program that allow the user to enter 10 groccery items
+
+  // const  grocerItems = [];
+  //
+  // for (let i = 0; i < 10; i += 1) {
+  //     grocerItems[i] = prompt("Enter grocery item");
+  // }
+  //
+  // console.log(grocerItems)
+
 
   // ============================= For Loop
 
@@ -136,7 +174,16 @@
 
   // example
 
-  // let pies = ["apple", "cherry", "key lime", "huckleberry"];
+   let pies = ["apple", "cherry", "key lime", "huckleberry"];
+                //0         1       2              3                    4 undefined
+   for (let i = 0; i < pies.length; i += 1) {
+       console.log(i);
+       console.log(pies[i]);
+}
+   // reverse order, pies.length -1 = last item, every loop minus one last to first
+   for (let i = pies.length -1; i >= 0; i -= 1){
+       console.log(pies[i]);
+   }
 
   // console.log(pies);
   //
