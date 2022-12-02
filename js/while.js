@@ -16,6 +16,30 @@
 // 32768
 // 65536
 
+///////class example
+                ///while loop
+// let numMultiplyBy = 2;
+// let counter = 0;
+// while(counter < 16) {
+//     console.log(numMultiplyBy);
+//     numMultiplyBy *= 2;
+//     counter ++;
+// }
+//
+//                 ////for loop based on the while loop
+// for (let i = 0, num = 2; i < 16; i++) {
+//     console.log(num);
+//     num *= 2;
+// }
+//
+//
+// num += 2; /// num + 2
+// num -= 2; /// num - 2
+// num *= 2; /// num * 2
+// num /= 2; /// num / 2
+// num ++;
+
+
 
 // var j = 2
 //
@@ -79,25 +103,76 @@
 
 
 
-// This is how you get a random number between 50 and 100
-let y = Math.floor(Math.random() * 50) + 50;
-console.log(y);
-// This expression will generate a random number between 1 and 5
-let x = Math.floor(Math.random() * 5) + 1;
-console.log(x);
+// // This is how you get a random number between 50 and 100
+// let allCones = Math.floor(Math.random() * 50) + 50;
+// console.log(allCones);
+// // This expression will generate a random number between 1 and 5
+// let N = Math.floor(Math.random() * 5) + 1;
+// console.log(n);
+//
+//
+//
+// function getRandomNum(min, max){
+//     return Math.floor(Math.random() * (max - min +1) + min);
+// }
+//
+//
+//
+//
+//
+// let conesToSell = getRandomNum(50, 100);
+// do {
+//     let conesToBuy = getRandomNum(1, 5);
+//     if (conesToBuy <= conesToSell) {
+//         console.log(`${conesToBuy} cones sold`);
+//         conesToSell -+ conesToBuy; //conesToSell = conesToSell - coneToBuy;
+//     } else {
+//         console.log(`Cannot sell you ${conesToBuy} cones, I have only ${conesToSell}...`)
+//         console.log(`${conesToSell} cones sold...`);
+//         conesToSell -= conesToBuy;
+//     }
+//      if (conesToSell === 0) {
+//          console.log(`Yay! I have sold them all!`)
+//          break;
+//      }
+// } while (conesToSell > 0)
+//
+//
+
+
+
+
+
+
+
+
+//
+// // let n = 0;
+// // let x = 0;
+// let whatThe;
+// while (n < 6) {
+//     n++;
+//     allCones += n;
+//     console.log(whatThe);
+// }
+//
+//
+
+
+
 
 // for (let i = y; i <x; i -= x) {
 //     console.log(i);
 // }
 
-while(x <= y)
-
-{
-    console.log(j ** y);
-    y++;
-
-}
-
+// while(x <= y)
+//
+// {
+//     console.log(j ** y);
+//     y++;
+//
+// }
+//
 
 
 
