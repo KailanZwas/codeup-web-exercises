@@ -177,12 +177,12 @@
    let pies = ["apple", "cherry", "key lime", "huckleberry"];
                 //0         1       2              3                    4 undefined
    for (let i = 0; i < pies.length; i += 1) {
-       console.log(i);
-       console.log(pies[i]);
+       //console.log(i);
+      // console.log(pies[i]);
 }
    // reverse order, pies.length -1 = last item, every loop minus one last to first
    for (let i = pies.length -1; i >= 0; i -= 1){
-       console.log(pies[i]);
+       //console.log(pies[i]);
    }
 
   // console.log(pies);
@@ -302,6 +302,18 @@
       1. Loop through your classmates array with a for loop.
       2. Loop through your classmates array with a forEach loop.
    */
+let classMates = ["kailan", "jason", "lonnie", "horace", "jeffery"];
+for (let i = 0; i < classMates.length; i += 1) {
+    console.log(classMates[i]);
+}
+
+classMates.forEach(function(element, index, array) {
+    console.log(element, index, array);
+  })
+
+  classMates.forEach((classMates) => {
+      console.log(element, index, array);
+  })
 
   // ============================= ARRAYS AND FUNCTIONS EXAMPLES
 
