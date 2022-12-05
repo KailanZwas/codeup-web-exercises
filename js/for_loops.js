@@ -15,8 +15,10 @@
 // 7 x 9 = 63
 // 7 x 10 = 70
 
-function showMultiplicationTable(input) {
-   for (let i = 0; i <= 10; i++)
+showMultiplicationTabl(7);
+
+function showMultiplicationTabl(input) {
+   for (let i = 1; i <= 10; i++)
         console.log(`${input} x ${i} = ${input * i}`);
 //let answer, log answer
 }
