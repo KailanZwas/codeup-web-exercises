@@ -6,7 +6,7 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
-
+let names = ["mike", "david", "josh", "steve"];
 
 
     /**
@@ -14,6 +14,7 @@
      * Create a log statement that will log the number of elements in the names
      * array.
      */
+    console.log(names.length);
 
     /**
      * TODO:
@@ -21,16 +22,40 @@
      * accessing each element's index.
      */
 
+///correct
+    //console.log(peoplesNames[0]);
+
+
+    ////mine
+    // names.forEach(function (index, index, array) {
+    //     console.log(index);
+    // })
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-
+console.log(names);
+    // for (let i = 0; i < names; i +=1) {
+//     console.log(names[i]);
+// }
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
+    // loop through the array and log the values
+
+    peoplesNames
+
+    for (let i = 0; i < names.length; i++) {
+        console.log(names);
+    }
+
+
+    //
+    // names.forEach(function (element, index, array) {
+    //     console.log(element);
+    // })
 
     /**
      * TODO:
@@ -46,4 +71,41 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
+    let numArr = [1, 2, 3, 4, 5];
+    function first (arr) {
+        return arr[0]
+    };
+
+    function second (arr) {
+        return arr[2];
+    }
+    function third () {
+        return arr[arr.length -1];
+    }
+
+    console.log(first(numArr));
+    console.log(second(numArr));
+    console.log(last(numArr));
+
+
+
+
+
+
+    ////why do i struggle??????
+    let numbers = [1, 2, 3, 4, 5];
+    function firstNumber(numbers) {
+        return numbers[1];
+    }
+
+    function secondNumber(numbers) {
+        return array[2];
+    }
+
+    function thirdNumber(numbers) {
+        return numbers[3]
+        console.log(numbers[3]);
+    }
 })();
+
+

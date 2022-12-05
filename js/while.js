@@ -27,18 +27,10 @@
 // }
 //
 //                 ////for loop based on the while loop
-// for (let i = 0, num = 2; i < 16; i++) {
-//     console.log(num);
-//     num *= 2;
-// }
-//
-//
-// num += 2; /// num + 2
-// num -= 2; /// num - 2
-// num *= 2; /// num * 2
-// num /= 2; /// num / 2
-// num ++;
-
+for (let i = 0, num = 2; i < 16; i++) {
+    console.log(num);
+    num *= 2;
+}
 
 
 // var j = 2
@@ -50,15 +42,15 @@
 // }
 
 // it works!!!
-// let j = 2
-// let i = 1;
-// while(i <= 16)
-//
-// {
-//     //console.log(j ** i);
-//     i++;
-//
-// }
+let j = 2
+let i = 1;
+while(i <= 16)
+
+{
+    console.log(j ** i);
+    i++;
+
+}
 
 
 // Do While Loop
@@ -94,32 +86,10 @@
 
         /// log //Yay! I sold them all! // If there are no more cones
 
+ function getRandomNum(min, max) {
+     return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-
-/// set allCone never changes
-///random user cone changes per interaction
-///subtracts from original all cone until all gone with appropriate messages logged
-
-
-
-
-// // This is how you get a random number between 50 and 100
-// let allCones = Math.floor(Math.random() * 50) + 50;
-// console.log(allCones);
-// // This expression will generate a random number between 1 and 5
-// let N = Math.floor(Math.random() * 5) + 1;
-// console.log(n);
-//
-//
-//
-// function getRandomNum(min, max){
-//     return Math.floor(Math.random() * (max - min +1) + min);
-// }
-//
-//
-//
-//
-//
 // let conesToSell = getRandomNum(50, 100);
 // do {
 //     let conesToBuy = getRandomNum(1, 5);
@@ -136,120 +106,13 @@
 //          break;
 //      }
 // } while (conesToSell > 0)
-//
-//
 
 
 
-
-
-
-
-
-//
-// // let n = 0;
-// // let x = 0;
-// let whatThe;
-// while (n < 6) {
-//     n++;
-//     allCones += n;
-//     console.log(whatThe);
-// }
-//
-//
-
-
-
-
-// for (let i = y; i <x; i -= x) {
-//     console.log(i);
-// }
-
-// while(x <= y)
-//
-// {
-//     console.log(j ** y);
-//     y++;
-//
-// }
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function divide (x,y) {
-//
-//     dived = x / y
-//     console.log(dived);
-// }
-//
-
-
-
-
-
-
-
-
-
-// let result = allCones;
-// let i = ;
-// let l = m;
-// do {
-//     i = i + 1;
-//     result = result + i;
-// } while (i < 5);
-//
-// console.log(result);
-
-
-// function divide(k,allCones){
-//    // var count = 1;
-//     for(var i = 1; i <= k; i=i+allCones){
-//         i++;
-//         //count++;
-//         //console.log(i);
-//     }
-//     //console.log(count);
-//     //return count;
-// }
-
-//divide(k,allCones);
-
-
-//
-//     function divide(k, allCones){
-//         var result = l;
-//         while(k <= allCones){
-//            k -= allCones;
-//             result++;
-//         }
-//
-//         return result;
-//         console.log(divide(allCones,k));
-//     }
-//
-// console.log(divide(allCones,k));
-
-
-
-// console.log(allCones);
-//
-//
-//
-// while (k <= 5)
-//     console.log(k);
-// {
-//     console.log(allCones / k);
-//     k++
-// }
+     // let conesToSell = getRandomNum(50, 100);
+     // console.log(conesToSell);
+     // for (let i = conesToSell; i > 0; i-- ) {
+     //     let conesToBuy = getRandomNum(1, 5);
+     //     let result = i - conesToBuy;
+     //     console.log(`${conesToBuy} sold ${result} cones left`);
+     // }
