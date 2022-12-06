@@ -388,6 +388,7 @@ const users = [
 //console.log(users.givenName);
     //0
 //console.log(users[0].givenName,users[1].givenName,users[2].givenName);
+<<<<<<< HEAD
 // for (let i = 0; i < users.length; i += 1){
 //     console.log(users[i].givenName);
 // }
@@ -456,3 +457,23 @@ users.forEach(function (user){
     }
 });
 console.log(longestName);
+=======
+for (let i = 0; i < users.length; i += 1){
+    console.log(users[i].givenName);
+}
+
+    //2
+users.forEach(function(users) {
+    users.givenName = 'John Doe';
+});
+console.log(users[0].age);
+console.log(users);
+
+//3
+//let ages = 0
+for (let i = 0; i < users.length; i++){
+    users[i].age += 1;
+   // ages += users[1].age;
+}
+console.log(users[0].age);
+>>>>>>> origin/main
