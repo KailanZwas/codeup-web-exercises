@@ -233,19 +233,25 @@
 
 // ========== Assigning Functionality to an Object
 
-// const dog1 = {
-//     petName: 'Sparky',
-//     age: 4,
-//     bark: function() {
-//         console.log("Woof woof!");
-//     },
-//     eat: function(food) {
-//         console.log('Dog is eating...' + food);
-//     },
-//     agePet: function() {
-//         this.age += 1;
-//     }
-// }
+const dog1 = {
+    petName: 'Sparky',
+    age: 4,
+    bark: function() {
+        console.log("Woof woof!");
+    },
+    eat: function(food) {
+        console.log('Dog is eating...' + food);
+    },
+    agePet: function() {       //this is a method
+        this.age += 1;
+    }
+}
+
+
+dog1.bark();
+dog1.eat('chocolate');
+dog1.agePet();
+console.log(dog1);
 //
 // const dog2 = {
 //     petName: 'Rex',
@@ -388,7 +394,7 @@ const users = [
 //console.log(users.givenName);
     //0
 //console.log(users[0].givenName,users[1].givenName,users[2].givenName);
-<<<<<<< HEAD
+
 // for (let i = 0; i < users.length; i += 1){
 //     console.log(users[i].givenName);
 // }
@@ -450,30 +456,30 @@ const users = [
 //creat longest name variable
 //loop through users and reassign the name of the current if longer than the longest name, replace with the users name
 
-let longestName = '';
-users.forEach(function (user){
-    if (user.givenName.length > longestName.length) {
-        longestName = user.givenName;
-    }
-});
-console.log(longestName);
-=======
-for (let i = 0; i < users.length; i += 1){
-    console.log(users[i].givenName);
-}
-
-    //2
-users.forEach(function(users) {
-    users.givenName = 'John Doe';
-});
-console.log(users[0].age);
-console.log(users);
-
-//3
-//let ages = 0
-for (let i = 0; i < users.length; i++){
-    users[i].age += 1;
-   // ages += users[1].age;
-}
-console.log(users[0].age);
->>>>>>> origin/main
+// let longestName = '';
+// users.forEach(function (user){
+//     if (user.givenName.length > longestName.length) {
+//         longestName = user.givenName;
+//     }
+// });
+// console.log(longestName);
+//
+// for (let i = 0; i < users.length; i += 1){
+//     console.log(users[i].givenName);
+// }
+//
+//     //2
+// users.forEach(function(users) {
+//     users.givenName = 'John Doe';
+// });
+// console.log(users[0].age);
+// console.log(users);
+//
+// //3
+// //let ages = 0
+// for (let i = 0; i < users.length; i++){
+//     users[i].age += 1;
+//    // ages += users[1].age;
+// }
+// console.log(users[0].age);
+//
