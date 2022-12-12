@@ -1,0 +1,6 @@
+.tr {
+    boarder: 1px solid #000;
+}
+.td {
+    boarder-right:1px solid rgba(0, 0, 0, 0.99);
+}
