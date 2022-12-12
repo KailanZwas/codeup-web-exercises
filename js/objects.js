@@ -1,5 +1,5 @@
 (function() {
-    "use strict";
+    // "use strict";
 
     /**
      * TODO:
@@ -11,17 +11,17 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-const person = {
-        firstName: `Rick`,
-        lastName: `Sánchez`,
-
-        // sayHello(greeting) {
-        //     return `Hello from Rich Sanchez!`;
-        // }
-    }
-
-    console.log(person.firstName); // `Rick`
-    console.log(person.lastName); // `Sánchez`
+// const person = {
+//         firstName: `Rick`,
+//         lastName: `Sánchez`,
+//
+//         // sayHello(greeting) {
+//         //     return `Hello from Rich Sanchez!`;
+//         // }
+//     }
+//
+//     console.log(person.firstName); // `Rick`
+//     console.log(person.lastName); // `Sánchez`
         /**
     console.log(person
      * TODO:
@@ -36,12 +36,12 @@ const person = {
     //         return `Hello from ` + `${person.fullName}`;
     //     }
  //log(person.sayHello(person));// "Hello from Rick Sanchez!"
-person.sayHello = function (){
-    return `Hello from ${this.firstName} ${this.lastName}`;
-}
-    console.log(person.sayHello());
-
-person.middleName = 'Ricardo';
+// person.sayHello = function (){
+//     return `Hello from ${this.firstName} ${this.lastName}`;
+// }
+//     console.log(person.sayHello());
+//
+// person.middleName = 'Ricardo';
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -57,11 +57,11 @@ person.middleName = 'Ricardo';
      * and console.log the relevant messages for each person
      */
 
-    const shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
+    // const shoppers = [
+    //     {name: 'Cameron', amount: 180},
+    //     {name: 'Ryan', amount: 250},
+    //     {name: 'George', amount: 320}
+    // ];
 
 
     // creat a for loop
@@ -110,34 +110,34 @@ person.middleName = 'Ricardo';
     //     console.log(book.title);
     // console.log(book.author.firstName);
 
-       let books = [
-
-        {
-            title: "The Fellowship of the Ring",
-            author: {
-                firstName: "J.R.R.",
-                lastName: "Tolkien"
-            }
-        },
-            {
-                title: "Jurassic Park",
-                author: {
-                    firstName: "Micheal",
-                    lastName: "Crichton"
-                }
-            },
-            {
-                title: "Black Hawk Down",
-                author: {
-                    firstName: "Mark",
-                    lastName: "Bowden"
-                }
-            }
-    ];
-
-    console.log(books[0].title);
-    console.log(books[0].author.firstName);
-    console.log(books[0].author.firstName);
+    //    let books = [
+    //
+    //     {
+    //         title: "The Fellowship of the Ring",
+    //         author: {
+    //             firstName: "J.R.R.",
+    //             lastName: "Tolkien"
+    //         }
+    //     },
+    //         {
+    //             title: "Jurassic Park",
+    //             author: {
+    //                 firstName: "Micheal",
+    //                 lastName: "Crichton"
+    //             }
+    //         },
+    //         {
+    //             title: "Black Hawk Down",
+    //             author: {
+    //                 firstName: "Mark",
+    //                 lastName: "Bowden"
+    //             }
+    //         }
+    // ];
+    //
+    // console.log(books[0].title);
+    // console.log(books[0].author.firstName);
+    // // console.log(books[0].author.firstName);
 
     /**
      * TODO:
@@ -164,25 +164,22 @@ person.middleName = 'Ricardo';
      *      ...
      */
     ///// Number
-
-    books.forEach(function (book,index) {
-        //book number
-        // let oneConsoleLogToRuleThemAll = '';
-        let bookNumber = index + 1;
-        console.log(bookNumber);
-        let fullName = `${book.author.firstName} ${book.author.lastName}`                 //    or //book.author.firstName + ' book.author.lastName;
-        console.log(fullName);
-        let message = `Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---`;
-        console.log(message);
-        console.log(`Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---\n`)
-        ///concatenate into the origianl string and log it after the loop
-        // oneConsoleLogToRuleThemAll += message;
-
-
-
-    })
-
-    // console.log(oneConsoleLogToRuleThemAll);
+    //
+    // books.forEach(function (book,index) {
+    //     //book number
+    //     // let oneConsoleLogToRuleThemAll = '';
+    //     let bookNumber = index + 1;
+    //     console.log(bookNumber);
+    //     let fullName = `${book.author.firstName} ${book.author.lastName}`                 //    or //book.author.firstName + ' book.author.lastName;
+    //     console.log(fullName);
+    //     let message = `Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---`;
+    //     console.log(message);
+    //     console.log(`Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---\n`)
+    //     ///concatenate into the origianl string and log it after the loop
+    //     // oneConsoleLogToRuleThemAll += message;
+    // // })
+    //
+    // // console.log(oneConsoleLogToRuleThemAll);
 
 
     /**
@@ -195,44 +192,44 @@ person.middleName = 'Ricardo';
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-///function
-    ///return object
-    let myAuthor = "Kailan Zwaschka";
-    let kailansBook = createBook("Coding for Awesome People", "Kailan Merell");
-/// //this is a "dry" way to make an array faster then manually make it
-    function createBook(title, author) {
-        let authorArray = author.split('');  //['Kailan', 'Zwaschka'];
-
-            //create let to fix syntax (black at first if need to be)
-            let bookObject = {
-        title: title,
-        author: {
-            firstName: authorArray[0],
-            lastName: authorArray[1]
-               }
-            };
-            //return book object
-        return bookObject;
-    }
-
-    let books2 = [
-        createBook("The Hobbit", "J.R.R. Tolkien"),
-        createBook("The Fellowship of the Ring", "J.R.R. Tolkien"),
-        createBook("Jurrasic Park", "Micheal Crichton")
-    ];
-   //console.log(books2);
-    function showBookInfo(book){
-        books.forEach(function (book,index) {
-            //book number
-            let bookNumber = index + 1;
-
-            let fullName = `${book.author.firstName} ${book.author.lastName}`                 //    or //book.author.firstName + ' book.author.lastName;
-
-            let message = `Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---`;
-            console.log(message);
-            console.log(`Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---\n`)
-            books2.foreach(function(book, index)) {
-                showBookInfo(book, index);
-            });
-    };
-})();
+// ///function
+//     ///return object
+//     let myAuthor = "Kailan Zwaschka";
+//     let kailansBook = createBook("Coding for Awesome People", "Kailan Merell");
+// /// //this is a "dry" way to make an array faster then manually make it
+//     function createBook(title, author) {
+//         let authorArray = author.split('');  //['Kailan', 'Zwaschka'];
+//
+//             //create let to fix syntax (black at first if need to be)
+//             let bookObject = {
+//         title: title,
+//         author: {
+//             firstName: authorArray[0],
+//             lastName: authorArray[1]
+//                }
+//             };
+//             //return book object
+//         return bookObject;
+//     }
+//
+//     let books2 = [
+//         createBook("The Hobbit", "J.R.R. Tolkien"),
+//         createBook("The Fellowship of the Ring", "J.R.R. Tolkien"),
+//         createBook("Jurrasic Park", "Micheal Crichton")
+//     ];
+//    //console.log(books2);
+//     function showBookInfo(book){
+//         books.forEach(function (book,index) {
+//             //book number
+//             let bookNumber = index + 1;
+//
+//             let fullName = `${book.author.firstName} ${book.author.lastName}`                 //    or //book.author.firstName + ' book.author.lastName;
+//
+//             let message = `Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---`;
+//             console.log(message);
+//             console.log(`Book # ${bookNumber}\nTitle: ${books.title}\n Author: ${fullName}\n ---\n`)
+//             books2.foreach(function(book, index)) {
+//                 showBookInfo(book, index);
+//             });
+//     };
+ })();
