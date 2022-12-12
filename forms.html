@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <title>Register With Us</title>
     </head>
+    <h1>Register With Us</h1>
     <body>
         <div>
-            <label for="username">Username</label>
-            <input type="text" name="email" placeholder="Enter your email address">
-            <input type="password" name="password">
-            <input id="username" name="username" type="text">
-            <textarea name="BIO"></textarea>
+            <form method="POST" action="https://request-inspector.glitch.me/">
+
+            <label for="email">Email<label>
+                <input type="text" name="email" placeholder="Enter your email address">
+                <br  />
+                <br>
+            <label for="password">password</label>
+                <input type="password" name="password">
+                <br/>
+                <br/>
+            <label for="bio">BIO</label>
+                <textarea name="BIO"></textarea>
+                <br/>
             <h2>How did you hear about us?</h2>
             <label for="billboard">
                 Billboard <input id="billboard" type="checkbox" name="advertisement" value="billboard">
@@ -24,7 +33,17 @@
             <label for="other">
                 Other <input id="other" type="checkbox" name="advertisement" value="other">
             </label>
-        <form method="POST" action="https://request-inspector.glitch.me/">
+                <br>
+                <label for="What web browser do you use">What web browser do you use</label><br>
+
+                <select name="What web browser do you use?">
+                    <option value="Chrome">Chrome</option>
+                    <option value="NetScape">NetScape</option>
+                    <option value="Safari">Safari</option>
+                </select>
+<br>
+            <input type="submit">
+        </form>
         </div>
     </body>
 </html>
