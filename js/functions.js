@@ -139,9 +139,9 @@ alert("The calculated tip is: " + tipUserAnswer.toFixed(2));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-function applyDiscount() {
-    return ()
-}
+// function applyDiscount() {
+//     return ()
+// }
 // function applyDiscount(num1, num2){
 //    let originalPrice = num1;
 //    let discountPercent = num2;

@@ -1,0 +1,52 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+.container-heading {
+    color: ;
+}
+
+h2 {
+    font-size: 80px;
+    text-decoration: underline;
+    animation: color-change 8s infinite;
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: blue; }
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+table, th, td {
+
+    border: 1px solid;
+    text-align: center;
+    width: 600px;
+}
+
+.tables {
+    display: table;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+}
+
+div {
+    column-gap: normal;
+ column-count: inherit;
+}
+p {
+    text-align: center;
+    width: content-box;
+    border: black;
+}
+.row  {
+    width: 800px;
+}

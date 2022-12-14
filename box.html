@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Lecture</title>
+  <!--
+      - box model
+      - width / height
+      - padding
+      - border
+      - setting multiple values
+      - border
+      - Chrome Inspector
+      - div vs. span (block vs. inline elements)
+      - box-sizing
+  -->
+  <style>
+
+    body {
+      width: 100%;
+      background: black;
+      margin: 0;
+     color: aliceblue;
+    }
+
+    h1 {
+      text-align: center;
+      background: purple;
+      margin: 0;
+    }
+
+    .box {
+      color: white;
+      height: 200px;
+      width: 200px;
+      padding: 30px;
+      border: 5px solid red;
+      margin: 10px;
+    }
+
+    .box1 {
+      background: blue;
+    }
+
+    .box2 {
+      background: green;
+      /*box-sizing: border-box;*/
+    }
+
+  </style>
+</head>
+<body>
+
+<!--<div class="box box1">-->
+<!--  <h1>Box 1</h1>-->
+<!--</div>-->
+
+<!--<div class="box box2">-->
+<!--  <h1>Box 2</h1>-->
+<!--</div>-->
+
+<div style="width: 50%; background: blue"> div 1</div>
+<div> div 2</div>
+
+<span> span1</span>
+<span>span2</span>
+
+</body>
+</html>
