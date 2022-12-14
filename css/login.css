@@ -65,8 +65,9 @@ fieldset {
 }
 
 .form-control {
-    margin-top: 4px;
-    margin-bottom-bottom: 4px;
+    padding-top: 4px;
+    margin-top: .5em;
+    margin-bottom-bottom: .5em;
 
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
@@ -75,5 +76,5 @@ fieldset {
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
     width: 100%;
+    /*width: calc(100% / 6);*/
 }
-
