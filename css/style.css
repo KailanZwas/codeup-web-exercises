@@ -1,9 +1,14 @@
 /*  selector for all "h1" elements
     that are a descendent of id="container"
     and have a class of "fancy-header" */
+.page-wrapper {
+    background-color: #d0defc;
+}
 
 .container-heading {
     color: blue;
+    text-decoration: underline;
+    text-align: center;
     text-decoration: underline;
 }
 
