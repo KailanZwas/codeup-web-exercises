@@ -96,10 +96,10 @@
     //         age: 3
     //     }
     // ]'
-assesment start with an empty array
-function returnPetsWithNoFish(pets) {
-
-}
+// assesment start with an empty array
+// function returnPetsWithNoFish(pets) {
+//
+// }
 
 
 
@@ -117,3 +117,68 @@ function returnPetsWithNoFish(pets) {
 // }
 // });
 //     return total /dogCount;
+
+// ================================= WARM UP
+//
+// Create a function, returnLongestPetName, that takes in a array of pet objects and
+// returns a string of the longest name for a pet.
+
+    const pets = [
+    {
+        name: 'Sparky',
+        type: 'Fish',
+        age: 4
+    },
+    {
+        name: 'Mr. Pig',
+        type: 'Cat',
+        age: 4
+    },
+    {
+        name: 'Bubba',
+        type: 'Dog',
+        age: 5
+    },
+    {
+        name: 'Beans',
+        type: 'Dog',
+        age: 3
+    },
+    {
+        name: 'Mr. Salmon',
+        type: 'Fish',
+        age: 1
+    }
+];
+
+pets.forEach(name, ) => {
+    console.log(array);
+});
+
+
+// function returnLongestPetName(pets) {
+//     i = 0;
+//     name = [];
+//     for (i = 0; i < name.length; i++) {
+//         console.log(name[i]);
+//     }
+// }
+//
+//
+//
+// returnLongestPetName(pets) // returns 'Mr. Salmon'
+
+
+
+const returnLongestPetName = (animals) => {
+    let longestPetName = '' +
+        animals.forEach(animal) => {
+        if (animal.name.length > longestPetName.length) {
+            longestPetName = animal.name;
+        }
+        {);
+return longestPetName;
+        };
+        }
+    }
+}
