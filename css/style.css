@@ -3,10 +3,12 @@
     and have a class of "fancy-header" */
 .page-wrapper {
     background-color: #d0defc;
+    opacity: 50%;
+    font-family: AkayaKanadaka;
 }
 
 .container-heading {
-    color: blue;
+    color: purple;
     text-decoration: underline;
     text-align: center;
     text-decoration: underline;
@@ -19,4 +21,44 @@
 
 body {
     font-family: "Arial", sans-serif;
+    background-image: url('/img/office1.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style: square;
+}
+
+td {
+    padding: 5px;
+    background-color: #3B94D9;
+    font-size: larger;
+}
+
+tr{
+    padding: 5px;
+    background-color: #3B94D9;
+    font-size: medium;
+}
+a {
+    background-color: red;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-color: green;
+}
+
+a:active {
+    background-color: black;
+}
+
+a:visited {
+    background-color: red;
 }
