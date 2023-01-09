@@ -49,33 +49,33 @@
 // Create a function, returnPetsWithNoFish, that takes in a array of pet objects and returns an array of pet objects
 // with no pets of type 'Fish'.
 
-    const pets = [
-    {
-        name: 'Sparky',
-        type: 'Fish',
-        age: 4
-    },
-    {
-        name: 'Mr. Pig',
-        type: 'Cat',
-        age: 4
-    },
-    {
-        name: 'Bubba',
-        type: 'Dog',
-        age: 5
-    },
-    {
-        name: 'Beans',
-        type: 'Dog',
-        age: 3
-    },
-    {
-        name: 'Mr. Salmon',
-        type: 'Fish',
-        age: 1
-    }
-];
+//     const pets = [
+//     {
+//         name: 'Sparky',
+//         type: 'Fish',
+//         age: 4
+//     },
+//     {
+//         name: 'Mr. Pig',
+//         type: 'Cat',
+//         age: 4
+//     },
+//     {
+//         name: 'Bubba',
+//         type: 'Dog',
+//         age: 5
+//     },
+//     {
+//         name: 'Beans',
+//         type: 'Dog',
+//         age: 3
+//     },
+//     {
+//         name: 'Mr. Salmon',
+//         type: 'Fish',
+//         age: 1
+//     }
+// ];
 
 //returnPetsWithNoFish(pets) // returns...
 
@@ -123,37 +123,37 @@
 // Create a function, returnLongestPetName, that takes in a array of pet objects and
 // returns a string of the longest name for a pet.
 
-    const pets = [
-    {
-        name: 'Sparky',
-        type: 'Fish',
-        age: 4
-    },
-    {
-        name: 'Mr. Pig',
-        type: 'Cat',
-        age: 4
-    },
-    {
-        name: 'Bubba',
-        type: 'Dog',
-        age: 5
-    },
-    {
-        name: 'Beans',
-        type: 'Dog',
-        age: 3
-    },
-    {
-        name: 'Mr. Salmon',
-        type: 'Fish',
-        age: 1
-    }
-];
-
-pets.forEach(name, ) => {
-    console.log(array);
-});
+//     const pets = [
+//     {
+//         name: 'Sparky',
+//         type: 'Fish',
+//         age: 4
+//     },
+//     {
+//         name: 'Mr. Pig',
+//         type: 'Cat',
+//         age: 4
+//     },
+//     {
+//         name: 'Bubba',
+//         type: 'Dog',
+//         age: 5
+//     },
+//     {
+//         name: 'Beans',
+//         type: 'Dog',
+//         age: 3
+//     },
+//     {
+//         name: 'Mr. Salmon',
+//         type: 'Fish',
+//         age: 1
+//     }
+// ];
+//
+// pets.forEach(name, ) => {
+//     console.log(array);
+// });
 
 
 // function returnLongestPetName(pets) {
@@ -257,3 +257,37 @@ pets.forEach(name, ) => {
 // function filterList(l) {
 //     return l.filter(x => typeof x === "number");
 // }
+
+
+// ================================= WARM UP
+//
+// Create a function, zipArrays, that takes two array inputs of the same length and returns an array with the
+// elements of both arrays alternating in the order of first[0], second[0], first[1], second[1], etc. If both arrays
+// are empty, return an empty array.
+//
+//
+// zipArrays([], []) // returns []
+// zipArrays([1], [2]) // returns [1, 2]
+// zipArrays(['a', 'b'], ['c', 'd']) // returns... ['a', 'c', 'b', 'd']
+// zipArrays([1,2,'a','b'], ['bob', null, 'sally', 25]) // returns...
+//
+//     [
+//     1,
+//         'bob',
+//         2,
+//         null,
+//         'a',
+//         'sally',
+//         'b',
+//         25
+//     ]
+
+function zipArrays(input,input1) {
+    let outPutArray = []
+    for (let i = 0; i < length; i++) {
+        outPutArray.push(input);
+        outPutArray.push(input1)
+    }
+    return outPutArray;
+
+}
