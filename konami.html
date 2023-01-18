@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script src="/js/jquery.js"></script>-->
+<script>
+  "use strict";
+
+  $(document).keyup(function(event){
+
+    let keyPressed = event.keyCode;
+    console.log(event.keyCode);
+       if (keyPressed === (38 && 38 && 40 && 40 && 37 && 39 && 37 && 39 && 65 && 66 && 13)) {
+      alert('You gained 30 lives!!!');
+//       if (ke)
+// let codebacground = $(document).css('background color', 'red');
+    }
+  });
+
+
+
+
+</script>
+</body>
+</html>

@@ -6,14 +6,14 @@
 </head>
 <body>
 <h1 id="header" class="header">Call of Duty</h1>
-<p id="story" class="story"></p>
+<p id="story" class="story">This is how call of duty came to be</p>
 <div id="games" class="games">
 <ul id="list of games" class="list of games">
-  <li class="codeup">Cod1</li>
-  <li class="codeup">Cod2</li>
-  <li class="codeup">Cod3</li>
-  <li class="codeup">Cod4</li>
-  <li >Cod5</li>
+  <li id="ccE" >Cod1</li>
+  <li id="ccE" >Cod2</li>
+  <li id="ccE" >Cod3</li>
+  <li id="ccE" >Cod4</li>
+  <li id="ccE" >Cod5</li>
 </ul>
 </div>
 
@@ -24,14 +24,30 @@
 <script src="js/jquery-3.6.3.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
+    // $(document).ready(function () {
+    //
+    // })
     // let contents = $('#games').html();
     // alert(contents);
     // $('.codeup, #story').css('border', '1px solid #F00');
-        $('li').css('font-size', '20px');
-        $('h1, p, li').css('background-color', 'red');
-        let contents = $('h1');
-        alert('contents')
-
+    //     $('li').css('font-size', '20px');
+    //     $('h1, p, li').css('background-color', 'red');
+    //     let contents = $('h1');
+    //     alert('contents')
+    $(' #header').click(function () {
+        $(this).css('background-color', 'red');
+    });
+    $(' #story').dblclick(function (e) {
+        $(this).css('font-size', '18px');
+    });
+    $('li').hover(
+        function(handlerIn, handlerOut) {
+            $(this).css('color', 'red');
+        },
+        function(handlerIn, handlerOut) {
+            $(this).css('color', 'black');
+        }
+    );
 </script>
 </body>
 </html>
