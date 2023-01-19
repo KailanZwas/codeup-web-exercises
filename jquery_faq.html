@@ -10,6 +10,31 @@
     </style>
 </head>
 <body>
+<!--ul list of  parks-->
+<h1>10 FAQs about national parks</h1>
+<h3 id="np1">National Parks</h3>
+<ul id="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+</ul>
+<h3 id="np2">State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+</ul>
+<h3 id="np3">State Parks of cali</h3>
+<ul id="something-parks-texas">
+    <li>Abilen</li>
+    <li>Big Ben</li>
+    <li>Choke Canyo</li>
+    <li>Davis Mountain</li>
+</ul>
+<button id="ulBtn">background</button>
+
 <!--dd list parks-->
 <dl>
     <dt>Where is Glacier National Park located?</dt>
@@ -70,10 +95,33 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
     "use strict";
-    // $('dd').toggleClass('invisible');
-    //  $('dd').css('visibility', 'hidden');
     $("#toggle-answers").on('click',function(){
         $("dd").toggleClass("invisible");
+        console.log('works');
+    });
+
+//    turn last LI yellow
+    $('#ulBtn').on('click', function (){
+        $('ul').children().next().next().next().css('backgroundColor', 'yellow').toggleClass('ul');
+    });
+    //     click h3 turns li bold
+
+    // $('#np1').on('click', function () {
+    //     // $('h3').children().css('fontWeight', 'bold');
+    //     $('h3').first().next().css('fontWeight', 'bold');
+    // });
+    // $('#np2').on('click', function () {
+    // $('h3').first().next().next().next().css('fontWeight', 'bold');
+    // });
+    // $('#np3').on('click', function () {
+    // $('h3').first().next().next().next().next().next().css('fontWeight', 'bold');
+    // });
+    $('h3').on('click', function (){
+        $(this).first().next().css('fontWeight', 'bold');
+    });
+//    parent ul should have a font color of blue
+    $('li').on('click', function (){
+        $(this).parent().children().first().css('color', 'blue');
     });
 </script>
 </body>

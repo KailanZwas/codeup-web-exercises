@@ -362,68 +362,150 @@
 
 
 // example data...
+//
+// const neighborhood1 = {
+//     neighborhood: "Lovely Estates",
+//     medianHomePrice: 280000,
+//     pool: true,
+//     tennis: false,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "Elementary School", rating: 8},
+//         {name: "Middle School", rating: 6},
+//         {name: "High School", rating: 8}
+//     ]
+// };
+//
+// const neighborhood2 = {
+//     neighborhood: "Luminous Estates",
+//     medianHomePrice: 270000,
+//     pool: true,
+//     tennis: false,
+//     crimeRate: "high",
+//     schools: [
+//         {name: "Elementary School", rating: 8},
+//         {name: "Middle School", rating: 8},
+//         {name: "High School", rating: 8}
+//     ]
+// }
+//
+// const neighborhood3 = {
+//     neighborhood: "Oak Mountain",
+//     medianHomePrice: 290000,
+//     pool: false,
+//     tennis: false,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "Elementary School", rating: 8},
+//         {name: "Middle School", rating: 8},
+//         {name: "High School", rating: 8}
+//     ]
+// }
+//
+// const neighborhood3 = {
+//     neighborhood: "Ginormous Acres",
+//     medianHomePrice: 350000,
+//     pool: true,
+//     tennis: true,
+//     crimeRate: "low",
+//     schools: [
+//         {name: "Elementary School", rating: 9},
+//         {name: "Middle School", rating: 9},
+//         {name: "High School", rating: 9}
+//     ]
+// }
+//
+// fn(neighborhood1) // returns false due to school rating
+// fn(neighborhood2) // returns false due to crime rate
+// fn(neighborhood3) // returns true
+// fn(neighborhood4) // returns false due to median home price
+//
+//
 
-const neighborhood1 = {
-    neighborhood: "Lovely Estates",
-    medianHomePrice: 280000,
-    pool: true,
-    tennis: false,
-    crimeRate: "low",
-    schools: [
-        {name: "Elementary School", rating: 8},
-        {name: "Middle School", rating: 6},
-        {name: "High School", rating: 8}
-    ]
-};
+// write fthat takes in the object
+// sum the total of the school rating
+// chain conditional logic to account for the three criteria
+// function affordableSafeSmartHome(neighborhood) {
+// let totalSchoolRating = 0;
+//
+// for (let i = 0; i < neighborhood.schools.length; i += 1){
+//     totalSchoolRating += neighborhood.schools[i].rating;
+// }
+// return neighborhood.medianHomePrice < 3000000 && crimeRate === 'low' && totalSchoolRating >= 24;
+// }return true
 
-const neighborhood2 = {
-    neighborhood: "Luminous Estates",
-    medianHomePrice: 270000,
-    pool: true,
-    tennis: false,
-    crimeRate: "high",
-    schools: [
-        {name: "Elementary School", rating: 8},
-        {name: "Middle School", rating: 8},
-        {name: "High School", rating: 8}
-    ]
+// function hasVowels (input) {
+//     let vowels = "aeiou";
+//     for(let i = 0 ; i < input.length ; i += 1){
+//         if(vowels.indexOf(input[i].toLowerCase()) !== -1){
+//             return true;
+//         }
+//     }   return false;
+//
+// }
+//
+// console.log(hasVowels("banana"))
+// console.log(hasVowels("ubuntu"))
+// console.log(hasVowels("QQQQ"))
+// console.log(hasVowels("wyrd"))
+//
+// function countVowels(input){
+//     let vowels = 'aeiou';
+//     let count = 0;
+//     for (let i = 0; i < input.length; i += 1){
+//         if(vowels.indexOf(input[i].toLowerCase()) !== -1){
+//             // take input and add it for vowel, how to record each time
+//             count += 1;
+//         }
+//     }return count;
+// }
+//
+//
+// console.log(countVowels("banana"));
+// console.log(countVowels("ubuntu"));
+// console.log(countVowels("mango"));
+// console.log(countVowels("QQQQ"));
+// console.log(countVowels("wyrd"));
+
+
+// / Create a function, encodeStr, that takes in a string and returns the string of characters with the
+// following substitutions:
+//
+// ‘a’ or ‘A’ becomes ‘@’
+// ‘i’ or ‘I’ becomes ‘1’
+// ‘s’ or ‘S’ becomes ‘$’
+//
+// encodeStr(‘apple’) // returns ‘@pple’
+// encodeStr(‘codeup’) // returns ‘codeup’
+// encodeStr(‘SASS’) // returns ‘$@$$’
+// encodeStr(‘bike’) // returns ‘b1ke’
+
+// function encodeStr(input) {
+//     // let lowerC = input.toLowerCase();
+//     // let lowerC = str.replaceAll{'a': '@',
+// return input.replace(/a/gi, '@').replace
+//
+// console.log(encodeStr('apple'));
+// console.log(mapString(str));
+// console.log(mapString(‘apple’));
+// console.log(mapString(‘codeup’));
+// console.log(mapString(‘SASS’)) ;
+// console.log(mapString(‘bike’)) ;
+
+
+
+function removeVowels(input){
+    let vowels = 'aeiou';
+    let remove = 'aeiou';
+    for (let i = 0; i < input.length; i += 1){
+        if(vowels.indexOf(input[i].toLowerCase()) !== -1){
+            // take input and add it for vowel, how to record each time
+            remove - 1;
+        }
+    }return remove;
 }
 
-const neighborhood3 = {
-    neighborhood: "Oak Mountain",
-    medianHomePrice: 290000,
-    pool: false,
-    tennis: false,
-    crimeRate: "low",
-    schools: [
-        {name: "Elementary School", rating: 8},
-        {name: "Middle School", rating: 8},
-        {name: "High School", rating: 8}
-    ]
-}
-
-const neighborhood3 = {
-    neighborhood: "Ginormous Acres",
-    medianHomePrice: 350000,
-    pool: true,
-    tennis: true,
-    crimeRate: "low",
-    schools: [
-        {name: "Elementary School", rating: 9},
-        {name: "Middle School", rating: 9},
-        {name: "High School", rating: 9}
-    ]
-}
-
-fn(neighborhood1) // returns false due to school rating
-fn(neighborhood2) // returns false due to crime rate
-fn(neighborhood3) // returns true
-fn(neighborhood4) // returns false due to median home price
-
-
-function affordableSafeSmartHome(price, crime, schools) {
-
-}
-
-
-
+(removeVowels("banana"), "bnn", "Exercise 46");
+(removeVowels("ubuntu"), "bnt", "Exercise 46");
+(removeVowels("mango"), "mng", "Exercise 46");
+(removeVowels("QQQQ"), "QQQQ", "Exercise 46");
