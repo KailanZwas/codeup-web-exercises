@@ -494,18 +494,33 @@
 
 
 
-function removeVowels(input){
-    let vowels = 'aeiou';
-    let remove = 'aeiou';
-    for (let i = 0; i < input.length; i += 1){
-        if(vowels.indexOf(input[i].toLowerCase()) !== -1){
-            // take input and add it for vowel, how to record each time
-            remove - 1;
-        }
-    }return remove;
-}
+//  function removeVowels(input){
+//     let vowels = 'aeiou';
+//     let remove = '';
+//     // let remove = 'aeiou';
+//     for (let i = 0; i < input.length; i += 1){
+//         if(vowels.indexOf(input[i].toLowerCase()) === -1 ){
+//             // take input and add it for vowel, how to record each time
+//                                     remove += input[i];
+//             // console.log(input[i]);
+//         }
+//     }return remove;
+// }
+//
 
-(removeVowels("banana"), "bnn", "Exercise 46");
-(removeVowels("ubuntu"), "bnt", "Exercise 46");
-(removeVowels("mango"), "mng", "Exercise 46");
-(removeVowels("QQQQ"), "QQQQ", "Exercise 46");
+
+
+
+function removeVowels(input) {
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let remove = '';
+    for (let i = 0; i < input.length; i += 1){
+       if( !vowels.includes(input[i])){
+           remove += input[i];
+       }
+
+    } return remove;
+}console.log(removeVowels("banana"));
+console.log(removeVowels("ubuntu"));
+console.log(removeVowels("mango"));
+console.log(removeVowels("QQQQ"));
