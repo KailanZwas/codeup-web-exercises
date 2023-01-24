@@ -1,10 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!-- Mapbox CSS -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+  <link href="css/reset.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    #map {
+      /* the width and height may be set to any size */
+      width: 100%;
+      flex-grow: 1;
+    }
+    header.container {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.78);
+    }
+    main.container, main.container>.row {
+      padding: 0;
+      flex-grow: 1;
+    }
+    aside.column {
+      width: 300px;
+      flex: none;
+    }
+  </style>
 </head>
 <body>
-$END$
+<h1>My First Favorite Restaurant!</h1>
+<!-- The HTML element that serves as the Mapbox container -->
+<div class="page-wrapper">
+  <header class="container">
+    <div class="row full-width">
+      <div class="column">
+        Que Paso
+      </div>
+      <div class="column">
+
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row full-width">
+      <aside class="column">
+
+      </aside>
+      <div class="column">
+        <div id='map'></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+
+<!--Keys-->
+<script src="js/keys.js"></script>
+<!--Mapbox Geocoder Util Methods-->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<!-- Mapbox JS -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!--custom JS-->
+<script>
+
+ // let $foodieSpot = $.ajax('./data/foodieSpot.json').done(function (data) {
+ //    console.log(data);
+ //    data.forEach(function () {
+ //      let marker = new mapboxgl.Marker(data)
+ //              .setLngLat(data)
+ //              .addTo(map);
+ //      let quePopup = new mapboxgl.Popup()
+ //              .setHTML(data)
+ //              .addTo(map);
+ //    });
+ //  })
+//
+//
+  <!--generate map-->
+mapboxgl.accessToken = keys.mapbox;
+let map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v9',
+  zoom: 10,
+  center: [-93.217376, 30.226595]
+});
+// // the  geocode method from mapbox-geocoder-utils.js
+// geocode("4080 Nelson Rd # 100\n" +
+//         "Lake Charles, Louisiana\n" +
+//         "70605", keys.mapbox).then(function(result) {
+//   console.log(result);
+//   map.setCenter(map);
+//   map.setZoom(5);
+// });
+// //markers
+// let marker = new mapboxgl.Marker()
+//         .setLngLat([-93.2494488, 30.1836608])
+//         .addTo(map);
+// //popup
+//
+// let quePopup = new mapboxgl.Popup()
+//         .setHTML("<p>QuePasa!</p>")
+//         .addTo(map);
+//
+// marker.setPopup(quePopup);
+
+// let accessToken = keys.mapbox;
+//
+// mapboxgl.accessToken = accessToken;
+//
+// let map = new mapboxgl.Map({
+//   container: 'map',
+//   style: 'mapbox://styles/mapbox/streets-v9',
+//   zoom: 3,
+//   center: [-98.4916, 29.4252]
+// });
+//
+// let kivaCafeInfo = {
+//   address: "1500 Willow Dr, Milan, NM 87021",
+//   popupHTML: "<p>Kiva Cafe</p>"
+// };
+//
+// let farEastCafeInfo = {
+//   address: "514 W 14th St, Eureka, CA 95501",
+//   popupHTML: "<p>Far East Cafe</p>"
+// };
+//
+// let quaPasaInfo = {
+//   address: "4080 Nelson Rd # 100 Lake Charles, Louisiana, 70605",
+//   popupHTML: "<p>QuaPasa</p>"
+// };
+//
+// function placeMarkerAndPopup(info, token, map) {
+//   geocode(info.address, token).then(function(data) {
+//     let popup = new mapboxgl.Popup()
+//             .setHTML(info.popupHTML);
+//     let marker = new mapboxgl.Marker(data)
+//             .setLngLat(data)
+//             .addTo(map)
+//             .setPopup(popup);
+//     popup.addTo(map);
+//   });
+// }
+//
+// placeMarkerAndPopup(quaPasaInfo, accessToken, map);
+
+
+
+</script>
 </body>
 </html>

@@ -510,17 +510,85 @@
 
 
 
+//
+// function removeVowels(input) {
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     let remove = '';
+//     for (let i = 0; i < input.length; i += 1){
+//        if( !vowels.includes(input[i])){
+//            remove += input[i];
+//        }
+//
+//     } return remove;
+// }console.log(removeVowels("banana"));
+// console.log(removeVowels("ubuntu"));
+// console.log(removeVowels("mango"));
+// console.log(removeVowels("QQQQ"));
 
-function removeVowels(input) {
-    let vowels = ['a', 'e', 'i', 'o', 'u'];
-    let remove = '';
-    for (let i = 0; i < input.length; i += 1){
-       if( !vowels.includes(input[i])){
-           remove += input[i];
-       }
 
-    } return remove;
-}console.log(removeVowels("banana"));
-console.log(removeVowels("ubuntu"));
-console.log(removeVowels("mango"));
-console.log(removeVowels("QQQQ"));
+// Exercise 47
+// Write a function definition named startsWithVowel that takes in string and true if the
+// string starts with a vowel
+// function startsWithVowel(input) {
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     // let firstVowel = [];
+// //     if (input.indexOf([0]) === vowels.indexOf){
+// //     }
+// //     return
+// // }
+// if(idx === vowels)
+// let firstVowel = [];
+// var idx = input.indexOf(0);
+// while (idx != -1) {
+//     results.push(idx);
+//     idx = haystack.indexOf(needle, idx + 1);
+// }
+// return results;
+// }
+
+
+
+//     for (let i = 0; i < input.length; i += 1) {
+//         if (i >= 0 && i < input.length) {
+//             vowelFirstLetter += input[i];
+//             console.log(input[1]);
+//         }
+//
+//     } return vowelFirstLetter;
+//
+// }
+
+    function startsWithVowel(input) {
+        let vowels = ['a', 'e', 'i', 'o', 'u'];
+for(let i = 0; i < vowels.length; i += 1){
+    console.log(vowels[i] === input[0]);
+
+}
+        console.log(input[0]);
+
+
+// if(input.indexOf(0) === vowels){
+//     return true;
+// }
+// else {
+//     return false;
+// }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(startsWithVowel("ubuntu"));
+console.log(startsWithVowel("banana"));
+console.log(startsWithVowel("mango"));

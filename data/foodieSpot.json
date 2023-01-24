@@ -1,14 +1,17 @@
 [
   {
     "Name": "Quepasa",
-    "lat/long": "-93.2494488, 30.1836608"
+    "address": "4080 Nelson Rd # 100 Lake Charles, Louisiana, 70605",
+    "popupHTML": "<p>QuaPasa</p>"
   },
   {
     "Name": "Kiva Cafe",
-    "lat/long": "1075354.2, 351100.9"
+    "address": "1500 Willow Dr, Milan, NM 87021",
+   "popupHTML": "<p>Kiva Cafe</p>"
   },
   {
     "Name": "Far East Cafe",
-    "lat/long": "-124.1764903, 40.7942897"
+    "address": "514 W 14th St Eureka CA 95501",
+    "popupHTML": "<p>Far East Cafe</p>"
   }
 ]
