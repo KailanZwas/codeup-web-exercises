@@ -3,23 +3,23 @@
     flex-direction: column;
     min-height: 100vh;
 }
-
+.container {
+}
 body{
     background-image: url("/img/sunny.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .column{
-    display: flex;
-    justify-content: space-evenly;
-}
-/*          Weather App header and city location    */
+     display: flex;
+     justify-content: space-evenly;
+ }
 .header{
-    background-color: #3487c5;
+    background-color: #3B94D9;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-/*                 MapBox Area                       */
+
 #map {
     /* the width and height may be set to any size */
     width: 300px;
@@ -27,20 +27,19 @@ body{
     flex-grow: 1;
     opacity: 75%;
 }
-/*        City Search area          */
 .search-area {
     width: 20%;
 }
-/*           Search Button           */
 .btn {
-    background-color: rgb(50, 126, 224);
+    background-color: #5e5d5d;
     height: 40px;
     padding: 0px;
     margin: 0px;
-    opacity: 75%;
 }
-/*        Weather Card              */
+
 .card {
+    /*height: 700px;*/
+
     width: 200px;
     height: 300px;
     background: rgb(50, 126, 224);
@@ -56,3 +55,4 @@ li {
     align-items: center;
     font-weight: bold;
 }
+

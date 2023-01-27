@@ -16,38 +16,37 @@
 </head>
 <body>
 <div class="page-wrapper">
-    <header class="container">
-        <div class="row full-width">
-            <div class=" header column">
-                <h1 class="display-5">Weather App</h1>
+    <div class="container">
+        <div class="row">
+            <div class="column header">
+                <h2>Weather App</h2>
             </div>
         </div>
-    </header>
-    <main class="container">
+    </div>
+    <div class="container">
         <div class="row full-width">
-            <aside class="column">
-                    <!--      City Search           -->
-                <div class="search-area input-group">
-                    <div class="form-outline">
-                        <input type="search" id="form1" class="form-control"/>
-                        <label class="form-label" for="form1"></label>
-                    </div>
+            <div class="col">
+                <div class="search-area input-group form-outline">
+                    <input type="search" id="form1" class="form-control"/>
+                    <label class="form-label" for="form1"></label>
                     <button type="button" class="btn search">Search</button>
                 </div>
-                <!--      5 Day Weather forcast          -->
-                <div id="card" class="weatherCard">
-                </div>
-            </aside>
-            <div class="column">
-                <!--      Map          -->
-                <div id='map'></div>
             </div>
         </div>
-
-
-    </main>
+        <div id="cards" class="row">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div id="map">----</div>
+            </div>
+        </div>
+    </div>
 </div>
 
+
+</body>
 <!--Keys-->
 <script src="js/keys.js"></script>
 <!---------------------jquery-->
@@ -60,8 +59,12 @@
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
 <!--custom js-->
 <script src="js/weatherApp.js">
+
+
     <!--bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossOrigin="anonymous"></script>
 
 </script>
-</body>
 </html>

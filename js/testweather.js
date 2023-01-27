@@ -8,7 +8,6 @@ let map = new mapboxgl.Map({
     zoom: 10,
     center: [-98.4916, 29.4252],
 });
-
 // Generate Local Weather Map API Call
 $.get('https://api.openweathermap.org/data/2.5/forecast', {
     lat: 29.4252,
@@ -28,7 +27,7 @@ function updateForcast(data) {
 <div class="col">
 <div class="card ">
     <ul>
-        <li>${newDate.toLocaleDateString('en-us',
+        <li>Date:${newDate.toLocaleDateString('en-us',
             {weekday: 'long'})}</li>
         <li>Description:${data.list[i].weather[0].description}</li>
         <li><img src="http://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png"></li>
