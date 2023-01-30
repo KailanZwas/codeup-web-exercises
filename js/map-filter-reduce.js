@@ -54,14 +54,15 @@ console.log(averageYears)
 
 //todo: Use .reduce to get the longest email from the list of users.
 const longestEmail = users.reduce((accumulation, emails) => {
-    return accumulation  emails.email;
-});
-console.log(longestEmail)
+    return accumulation.length  > emails.email.length ? accumulation : emails.email;
+},"");
+console.log(longestEmail);
 
 
 //todo: Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
-
-
-
+const userNames = users.reduce((str, user) => {
+str += users.name;
+return str;
+}, 'Your insturctors are: ').slice(0, -2) + ',');
 //Bonus
 //todo: Use .reduce to get the unique list of languages from the list of users.
