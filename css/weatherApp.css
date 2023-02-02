@@ -18,6 +18,7 @@ body{
     background-color: #3487c5;
     justify-content: space-between;
     margin-bottom: 10px;
+    width: 100%;
 }
 /*                 MapBox Area                       */
 #map {
@@ -48,6 +49,7 @@ body{
     margin-bottom: 10px;
     margin-top: 10px;
     opacity: 75%;
+    padding: 2px;
 }
 li {
     list-style: none;

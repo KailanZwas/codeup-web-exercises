@@ -97,3 +97,5 @@ console.log(marker.getLngLat())
 function onClick() {
     const lngLat = onClick().getLngLat();
 }
+
+
